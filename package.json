@@ -1,0 +1,22 @@
+{
+  "name": "seere",
+  "version": "1.0.0",
+  "description": "Webscraping Tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HLMelton/Seere.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HLMelton/Seere/issues"
+  },
+  "homepage": "https://github.com/HLMelton/Seere#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
