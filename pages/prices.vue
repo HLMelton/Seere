@@ -2,7 +2,6 @@
   <div class="bg-[#CDD3D5] flex"> 
     <Navigation />  
     <Pricing />
-    <FooterConnections />
   </div>
 </template>
 
