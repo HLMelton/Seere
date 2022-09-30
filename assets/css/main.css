@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .navigation-icon{
+        @apply relative flex items-center justify-center
+               h-12 w-12 mt-2 mb-2 mx-auto shadow-lg
+               bg-[#75B8C8] text-white
+               hover:bg-[#CDD3D5] hover:text-[#220C10]
+               rounded-3xl duration-300 ease-linear
+               cursor-pointer;
+
+    }
+}
