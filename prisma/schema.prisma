@@ -3,13 +3,11 @@
 
 generator client {
   provider = "prisma-client-js"
-    previewFeatures = ["referentialIntegrity"]
 }
 
 datasource db {
-  provider = "mysql"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
-  referentialIntegrity = "prisma"
 }
 
 // TODO: Write Schema organization for Goods taking in prices as components of objects. 
@@ -21,7 +19,7 @@ model Good {
   vendors   Prices[]
 }
 
-model Price {
+model Prices {
   id          Int @id @default(autoincrement())
   vendorPrice Float 
   vendor      String @relation(references: [id])

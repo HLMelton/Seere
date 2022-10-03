@@ -9,7 +9,8 @@
                bg-[#75B8C8] text-white
                hover:bg-[#CDD3D5] hover:text-[#220C10]
                rounded-3xl duration-300 ease-linear
-               cursor-pointer;
+               cursor-pointer
+               hover:rounded-2xl;
 
     }
 }
