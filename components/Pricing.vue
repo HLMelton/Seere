@@ -8,6 +8,11 @@
           <Item icon="milk" /> 
         </button>
       </div>
+      <div class="result-container">
+        <li v-for="result in results">
+          {{ result }}
+        </li>
+      </div>
     </div>
 </template>
 
@@ -22,7 +27,7 @@ const axios = require('axios')
 
 // const cheerio = require('cheerio')
 
-const url: String =  'https://www.target.com/p/2-reduced-fat-milk-1gal-good-38-gather-8482/-/A-13276204';
+const url: String =  'https://www.walmart.com/ip/Great-Value-2-Reduced-Fat-Milk-128-Fl-Oz/10450115';
 
 //  TODO: Figure out where you can and cannot 
 //        inject the URL into different functions. Also 
@@ -37,21 +42,23 @@ export default {
   },
   name: 'Pricing',
   methods: {
-    getPrices(vendor: {vendorUrl: String, vendorName: String}){
-        // change this to the object db reference after initial test
-        // axios({
-        //   method: 'get',
-        //   url: this.vendorUrl: String,
-        // })
-        // .then(function (response: any){
-        //   let html = response.data;
+    // getPrices(vendor){
+    //     change this to the object db reference after initial test
+    //     axios({
+    //       method: 'get',
+    //       url: this.vendorUrl: String,
+    //     })
+    //     .then(function (response: any){
+    //       let html = response.data;
 
-        //   // let $ = cheerio.load(html)
-        //   // TODO: Find why the content of the html is returning as the content of the current page rather than the page requested. 
+    //       // let $ = cheerio.load(html)
+    //       // TODO: Find why the content of the html is returning as the content of the current page rather than the page requested. 
 
-        //   console.log(html)
-        // })
-      }
+    //       console.log(html)
+    //     })
+    //   }
     },
+
+
  }
 </script>
