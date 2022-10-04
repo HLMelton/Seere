@@ -8,6 +8,11 @@ module.exports = {
     "./nuxt.config.{js,ts}",
   ],
   theme: {
+    extend: {
+      fontFamily: {
+        ProcrastinatingPixie: ["ProcrastinatingPixie", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 }

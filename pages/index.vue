@@ -2,7 +2,6 @@
   <div class="bg-[#CDD3D5] flex"> 
     <Navigation />  
     <Home />
-    <FooterConnections />
   </div>
 </template>
 

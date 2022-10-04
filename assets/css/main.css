@@ -11,6 +11,18 @@
                rounded-3xl duration-300 ease-linear
                cursor-pointer
                hover:rounded-2xl;
-
     }
+    .item-icon{
+        @apply hover:bg-[#CDD3D5] hover:rounded-lg rounded-md h-12 w-12 
+    }
+    .item-container{
+        @apply pt-2  w-max max-h-16 rounded-b-md 
+             bg-[#75B8C8] content-center text-center 
+             text-white pl-2 pr-2 
+    }
+}
+
+@font-face {
+    font-family: ProcrastinatingPixie;
+    src: url(assets/ProcrastinatingPixie.ttf);
 }

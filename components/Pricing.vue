@@ -1,7 +1,12 @@
 <template>
     <div class="flex flex-col">
-      <div class=" pt-2 min-width-9 w-16 h-12 rounded-b-md bg-[#75B8C8] content-center text-center text-white">
-        <h1>test</h1>
+      <div class="item-container">
+        <button class="item-icon"> 
+          <Item icon="eggs" /> 
+        </button>
+        <button class="item-icon"> 
+          <Item icon="milk" /> 
+        </button>
       </div>
     </div>
 </template>
