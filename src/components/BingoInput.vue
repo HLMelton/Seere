@@ -12,8 +12,8 @@ export default {
 </script>
 
 <template>
-    <div class="flex flex-col">
-    
+    <div class="flex flex-col space-y-3 p-3">
+
         <h1 class="text-center flex-1">
             Display Pool Here 
         </h1>

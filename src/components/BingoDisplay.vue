@@ -13,6 +13,9 @@ export default {
 
 <template>
     <h1 class="text-center">
-        Testing the Text Display Component Here 
+        Display The Card Here 
+    </h1>
+    <h1 class="text-center">
+        Put the Generate Button Here 
     </h1>
 </template>
