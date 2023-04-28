@@ -30,6 +30,6 @@ export const useLibraryStore = defineStore({
     },
   },
 
-  actions: {
+  actions: {}
 
 });
