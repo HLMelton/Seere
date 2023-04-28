@@ -1,9 +1,9 @@
 <script lang="ts">
-import { useLibraryStore }
+import { useLibraryStore } from '../store/library';
 
 export default {
     setup() {
-        const store = useStore()
+        const store = useLibraryStore();
     },
     methods:{
 
@@ -12,7 +12,16 @@ export default {
 </script>
 
 <template>
-    <h1>
-        Testing the Text Input Here
-    </h1>
+    <div class="flex flex-col">
+    
+        <h1 class="text-center flex-1">
+            Display Pool Here 
+        </h1>
+        <h1 class="text-center flex-1">
+            Testing the Text Input Here 
+        </h1>
+        <h1 class="text-center flex-1">
+            Input Submission Button Here 
+        </h1>
+    </div>
 </template>
