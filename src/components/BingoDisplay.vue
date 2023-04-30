@@ -1,11 +1,11 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
-import { useLibraryStore } from '../store/library';
+import { useDeckStore } from '../store/deck';
 import { storeToRefs } from 'pinia';
 
 export default defineComponent({
     setup() {
-        const store = useLibraryStore();
+        const store = useDeckStore();
 
         const { cards } = storeToRefs(store);
         console.log(cards)

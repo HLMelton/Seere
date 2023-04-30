@@ -6,7 +6,7 @@ interface Card {
   id: Number;
 }
 
-export const useLibraryStore = defineStore('library', {
+export const useDeckStore = defineStore('deck', {
   state: () => ({
     cards: [] as Card[],
     id: 0,

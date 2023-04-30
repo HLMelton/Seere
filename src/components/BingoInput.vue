@@ -1,12 +1,12 @@
 <script lang="ts">
 import {ref, defineComponent} from 'vue';
-import { useLibraryStore } from '../store/library';
+import { useDeckStore } from '../store/deck';
 import { storeToRefs } from 'pinia';
 
 export default defineComponent({
     setup() {
         const card = ref("")
-        const store = useLibraryStore();
+        const store = useDeckStore();
 
         const { cards } = storeToRefs(store);
 
