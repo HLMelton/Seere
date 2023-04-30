@@ -7,6 +7,8 @@ export default {
     BingoInput,
     BingoDisplay,
   },
+  setup(){
+  }
 }
 </script>
 
