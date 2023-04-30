@@ -1,14 +1,39 @@
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { ref, defineComponent } from 'vue';
 import { useDeckStore } from '../store/deck';
 import { storeToRefs } from 'pinia';
 
 export default defineComponent({
     setup() {
+        const currentDeck = ref([]);
         const store = useDeckStore();
 
         const { cards } = storeToRefs(store);
-        return { store, cards }  
+
+        // Start Shuffle Function Here
+        function shuffle(deckArray: []) {
+            console.log('testing the function on click')
+            console.log(deckArray)
+            let currentIndex = deckArray.length, randomIndex;
+
+            // While there are elements to shuffle
+            while (currentIndex != 0) {
+
+                // Pick the remaining element(s)
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex--;
+
+                // Swap the elements
+                [deckArray[currentIndex], deckArray[randomIndex]] = [
+                    deckArray[randomIndex], deckArray[currentIndex]];
+            }
+            console.log(deckArray)
+            return deckArray
+        }
+        // End shuffle function here
+        
+
+        return { store, cards, shuffle, }  
     },
 })
 </script>
@@ -23,7 +48,7 @@ export default defineComponent({
     </div>
     <!-- Impliment Shuffle function after pulling the items into an array for this component-->
     <div class="flex flex-col items-center">
-        <button class="bg-[#B4CDED] text-[#0D1821] px-2 py-1 rounded-xl" @click="">
+        <button class="bg-[#B4CDED] text-[#0D1821] px-2 py-1 rounded-xl" @click="shuffle([1,2,3,4,5,6,7,8,9,10,11,12])">
             Generate
         </button>
     </div>
