@@ -5,5 +5,8 @@
 @layer components {
     .bingo-slot {
       @apply text-center bg-gray-400 rounded-md;
+    },
+    .bingo-button{
+      @apply bg-[#B4CDED] text-[#0D1821] px-2 py-1 rounded-xl
     }
   }
