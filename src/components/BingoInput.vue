@@ -15,7 +15,6 @@ export default defineComponent({
                 return;
             }
             store.addCard(cardInput)
-            console.log(card.value)
             card.value="";
         }
 
