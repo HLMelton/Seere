@@ -10,7 +10,7 @@ export default defineComponent({
 
         const { cards } = storeToRefs(store);
 
-        // Start Shuffle Function Here
+        // Start Shuffle Function Here (Using Fisher-Yates Shuffle Algorythm)
         function shuffle(deckArray: []) {
             console.log('testing the function on click')
             console.log(deckArray)
