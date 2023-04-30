@@ -1,35 +1,19 @@
 import { defineStore } from 'pinia';
+import { ref, reactive} from 'vue';
 
-export interface Product {
-  id: number;
-  title: string;
-  price: number;
-  description: string;
-  category: string;
-  image: string;
+interface Card {
+  card: String;
+  id: Number;
 }
 
-interface LibraryState {
-  items: Record<string, Product>;
-}
-
-export const useLibraryStore = defineStore({
-  id: 'library',
-
-  state: (): LibraryState => ({
-    items: {},
+export const useLibraryStore = defineStore('library', {
+  state: () => ({
+    cards: [] as Card[],
+    id: 0,
   }),
-
-  getters: {
-    list(): Product[] {
-      return this.ids.map((i) => this.items[i]);
-    },
-
-    loaded(): boolean {
-      return this.ids.length > 0;
-    },
+  actions: {
+    addCard(card: string) {
+      this.cards.push({card, id: this.id++})
+    }
   },
-
-  actions: {}
-
 });
