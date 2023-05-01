@@ -1,5 +1,4 @@
 import { defineStore } from 'pinia';
-import { ref, reactive} from 'vue';
 
 interface Card {
   card: String;
