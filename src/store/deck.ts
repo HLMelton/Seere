@@ -2,7 +2,7 @@ import { defineStore } from 'pinia';
 
 export interface Card {
   card: String;
-  id: Number;
+  id: number;
 }
 
 export const useDeckStore = defineStore('deck', {
@@ -13,6 +13,10 @@ export const useDeckStore = defineStore('deck', {
   actions: {
     addCard(card: string) {
       this.cards.push({card, id: this.id++})
+    },
+    removeCard(card: Card){
+      console.log('Trigger: Remove the current index')
     }
   },
+  persist: false,
 });
