@@ -12,7 +12,7 @@ export default defineComponent({
 
         // Start Shuffle Function Here (Using Fisher-Yates Shuffle Algorythm)
         function shuffle(deckArray: []) {
-            console.log('testing the function on click')
+            console.log('Initial Array:')
             console.log(deckArray)
             let currentIndex = deckArray.length, randomIndex;
 
@@ -27,6 +27,7 @@ export default defineComponent({
                 [deckArray[currentIndex], deckArray[randomIndex]] = [
                     deckArray[randomIndex], deckArray[currentIndex]];
             }
+            console.log('Shuffle Array:')
             console.log(deckArray)
             return deckArray
         }
@@ -43,7 +44,7 @@ export default defineComponent({
         <!-- Abstract the classes into custom card components -->
         <!-- Aight we got reactivity, now lets randomize it -->
         <div v-for="cardItem in cards" :key="cardItem.id" class="bg-[#344966] text-[#F0F4EF] p-1 rounded-md m-1">
-                <span> {{ cardItem.card }} </span>
+                <span>  temp: {{ cardItem.card }} </span>
         </div>
     </div>
     <!-- Impliment Shuffle function after pulling the items into an array for this component-->
