@@ -3,6 +3,7 @@ import { defineComponent } from 'vue';
 import { useDeckStore } from '../store/deck';
 import { storeToRefs } from 'pinia';
 
+
 export default defineComponent({
     setup() {
         // const currentDeck = ref([]);
@@ -11,8 +12,9 @@ export default defineComponent({
         const { cards } = storeToRefs(store);
 
 
-
-        function shuffle(deckArray: []) {
+        // This really shouldnt be an :any input for the shuffle function but its the only way it'll let me build
+    
+        function shuffle(deckArray: any) {
             let currentIndex = deckArray.length, randomIndex;
 
             // While there are elements to shuffle
