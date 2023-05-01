@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia';
 
-interface Card {
+export interface Card {
   card: String;
   id: Number;
 }
