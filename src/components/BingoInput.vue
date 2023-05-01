@@ -29,7 +29,7 @@ export default defineComponent({
             <input v-model="card" type="text" class="bg-gray-300 rounded-xl text-center"  /><button class="bg-[#B4CDED] text-[#0D1821] px-2 py-1 rounded-xl w-1/3 mt-2">Add</button>
         </form>
     <div class="flex flex-col space-y-3 p-3 h-4/6 overflow-y-scroll">
-        <div v-for="cardItem in cards" :key="cardItem.id" class="bg-[#344966] text-[#F0F4EF] p-1 rounded-md m-1">
+        <div v-for="cardItem in cards" :key:number="cardItem.id" class="bg-[#344966] text-[#F0F4EF] p-1 rounded-md m-1">
             <span> {{ cardItem.card }} </span>
         </div>
     </div>
