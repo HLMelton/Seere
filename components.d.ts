@@ -10,7 +10,6 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     BingoDisplay: typeof import('./src/components/BingoDisplay.vue')['default']
-    BingoDIsplay: typeof import('./src/components/BingoDIsplay.vue')['default']
     BingoInput: typeof import('./src/components/BingoInput.vue')['default']
   }
 }
