@@ -8,7 +8,7 @@ export default {
     BingoDisplay,
   },
   setup(){
-  }
+  },
 }
 </script>
 
@@ -24,7 +24,7 @@ export default {
       <div class="bg-[#F0F4EF] flex-1 rounded-lg">
         <BingoDisplay />
       </div>
-      
+
     </div>
   </div>
 </template>

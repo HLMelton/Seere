@@ -3,6 +3,11 @@ import './style.css';
 import App from './App.vue';
 import { createPinia } from 'pinia';
 import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
+import { inject } from '@vercel/analytics';
+
+inject({
+    debug: false,
+  });
 
 // App Initializations
 const app = createApp(App);
