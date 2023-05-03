@@ -15,9 +15,8 @@ export const useDeckStore = defineStore('deck', {
       this.cards.push({card, id: this.id++})
     },
     removeCard(card: Card){
-      console.log('Trigger: Remove the current index')
-      console.log(card)
+      this.cards.splice(this.cards.indexOf(card), 1);
     }
   },
-  persist: false,
+  persist: true,
 });

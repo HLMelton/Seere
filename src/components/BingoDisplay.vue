@@ -3,7 +3,6 @@ import { defineComponent } from 'vue';
 import { useDeckStore } from '../store/deck';
 import { storeToRefs } from 'pinia';
 
-
 export default defineComponent({
     setup() {
         // const currentDeck = ref([]);
