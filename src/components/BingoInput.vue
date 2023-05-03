@@ -1,6 +1,6 @@
 <script lang="ts">
 import {ref, defineComponent} from 'vue';
-import { Card, useDeckStore } from '../store/deck';
+import { useDeckStore } from '../store/deck';
 import { storeToRefs } from 'pinia';
 
 export default defineComponent({
