@@ -1,6 +1,11 @@
 # Seere
 Bingo Card Generator
 
+[![Vue](https://img.shields.io/badge/ESP32-grey?logo=vue)]()
+[![Javascript](https://img.shields.io/badge/Arduino-grey?logo=javascript)]()
+[![Vercel](https://img.shields.io/badge/ESP32-grey?logo=vercel)]()
+
+
 [See It Live](https://seere.vercel.app/)
 
 ## Project Summary
