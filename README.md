@@ -2,6 +2,7 @@
 Bingo Card Generator
 
 [![Vue](https://img.shields.io/badge/Vue-grey?logo=vuedotjs)]()
+[![Vite](https://img.shields.io/badge/Vite-grey?logo=vite)]()
 [![Javascript](https://img.shields.io/badge/Javascript-grey?logo=javascript)]()
 [![Vercel](https://img.shields.io/badge/Vercel-grey?logo=vercel)]()
 
