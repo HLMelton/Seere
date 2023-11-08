@@ -1,5 +1,7 @@
 # Seere
-Bindo Card Generator
+Bingo Card Generator
+
+[See It Live](https://seere.vercel.app/)
 
 ## Components 
 - [Vue 3](https://vuejs.org/) - Fun
