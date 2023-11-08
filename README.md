@@ -3,6 +3,11 @@ Bingo Card Generator
 
 [See It Live](https://seere.vercel.app/)
 
+## Project Summary
+
+This project was meant as a tool to generate small bingo cards that would be printed out for each employee on the shift to turn minor, mundane tasks into objectives to keep the slow days lively at work. This very much was a speedy project to learn the basics of shuffling algorithms and to throw together an application as quickly as possible. That being said, bugs are expected and behaviors are not ironed out. 
+
+
 ## Components 
 - [Vue 3](https://vuejs.org/) - Fun
 - [TypeScript](https://vuejs.org/guide/typescript/overview.html) - Typesafety
@@ -13,9 +18,7 @@ Bingo Card Generator
 ## Dev Deps for Quality of Life
 - [Unplugin](https://github.com/antfu/unplugin-auto-import) & [Components](https://github.com/antfu/unplugin-vue-components)
 
-## Project Summary
 
-This project was meant as a tool to generate small bingo cards that would be printed out for each employee on the shift to turn minor inconceniences and common mundane tasks into objectives to keep the slow days lively at work. 
 
 ## Choice of Tools
 
