@@ -1,7 +1,7 @@
 # Seere
 Bingo Card Generator
 
-[![Vue](https://img.shields.io/badge/Vue-?logo=vuedotjs)]()
+[![Vue](https://img.shields.io/badge/Vue-grey?logo=vuedotjs)]()
 [![Javascript](https://img.shields.io/badge/Javascript-grey?logo=javascript)]()
 [![Vercel](https://img.shields.io/badge/Vercel-grey?logo=vercel)]()
 
