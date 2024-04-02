@@ -13,7 +13,7 @@ export default {
 </script>
 
 <template>
-  <h1 class="text-white absolute w-screen text-center pt-1 text-5xl">Seere</h1>
+  <h1 class="text-white absolute w-screen text-center pt-1 text-5xl">Seere V1</h1>
   <div class="bg-slate-600 h-screen w-screen pt-16">
     <div class="bg-[#B4CDED] h-4/6 w-10/12 mx-auto flex flex-row space-x-3 pt-3 pb-3 px-3 rounded-md">
 
